@@ -12,7 +12,9 @@ body{
      text-align: center;
 
 }
-
+.nav_button{
+     display: none;
+}
 
 .container{
 
@@ -38,6 +40,10 @@ body{
      color: red;
      font-weight: 600;
      margin-left: 15px;
+     position: absolute;
+     top: 0px;
+     left: 150px;
+
      
      
 }
@@ -47,6 +53,7 @@ body{
      gap:20px;
      position: absolute;
      right: 200px;
+     top: 15px;
      
 }
 .link_nav{
@@ -365,24 +372,33 @@ footer{
 
 @media screen and (max-width: 770px) {
 
-     .nav{
 
-          display: none;
-
+     .body{
+          text-align: center;
           
+
+     }
+
+     .nav{
+          display: none;
+     }
+
+     .link_nav_app{
+          display: none;
      }
 
      .nav_img{
-          display: none;
+     display: none;
      }
 
      .container{
           display: none;
+          position: absolute;
      }
      
      #nav{
+          position: absolute;
 
-          display: none;
          
      }
      .nav_name{
@@ -392,16 +408,34 @@ footer{
      }
      
      .link_navG{
-display: none;
-
+          display: none;
           
      }
      .link_nav{
           display: none;
 }
 
+.nav_button{
+     display: flex;
+     margin: 30%;
+     margin-top: 30px;
+     margin-right: 20%;
+     margin-left: 20%;
+     margin-bottom: 0%;
+     text-align: center;
+     justify-content: center;
+     justify-self: center;
+     justify-items: center;
+     padding: 3%;
+     font-size: 20px;
+     border-radius: 30px;
+     border: 2px solid rgb(0, 174, 255);
+     background-color:  rgb(40, 42, 65);
+     color: white;
+}
 
 .corpo{
+     
      background-color: rgba(0, 217, 255, 0);
      color: rgb(255, 255, 255);
      text-align: center;
@@ -417,18 +451,22 @@ display: none;
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 
 .nome{
-     font-size: 20px;
-     font-weight: 700;   
+     font-size: 40px;
+     font-weight: 700;
+     margin-top: 40%;   
 }
-.icon , .nome{
-     overflow: hidden;
+.icon{
      animation: pulseAnimation 0s;
      transform-origin: center;
+     margin-bottom: 30%;
  }
  
 
 .frase {
-     margin-left: 0px;
+     text-align: center;
+     justify-items: center;
+     justify-content: center;
+     margin-left: 30px;
      font-size: 10px;
      color: white;
      font-family: "Kode Mono", monospace;
@@ -552,12 +590,17 @@ body{
 
      animation: fallingAnimation 0s ;
      position: relative;
-     text-align: left;
+     text-align: justify;
      font-size: 10px;
  }
+
  
  .info_h1{
-     font-size: 20px;
+     font-size: 40px;
+     text-align: center;
+   }
+   .list_info{
+     text-align: center;
    }
  
 .img{
@@ -579,6 +622,30 @@ body{
 .corpo{
      margin-top: 40px;
      margin-bottom: 40px;
+}
+
+
+
+.corpo2{
+     text-align: center;
+}
+
+
+.corpo4,.card,.cards,.card-body{
+     text-align: center;
+     justify-content: center;
+     justify-items: center;
+     justify-self: center;
+}
+
+.cards{
+ margin-left: 10%;
+ padding: 0%;
+}
+
+footer{
+     padding: 40px;
+     margin-top: 30px;
 }
 
 
