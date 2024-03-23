@@ -1,8 +1,9 @@
 
+
 body{
      background-color: rgb(29, 31, 48);
      color: white;
-     display: grid;
+     
      grid-template-columns: auto ;
      grid-template-rows: 100%;
      grid-template-areas: "nav"
@@ -11,6 +12,7 @@ body{
      text-align: center;
 
 }
+
 
 .container{
 
@@ -25,10 +27,11 @@ body{
      display: flex;
      flex-direction:inherit;
      padding-left: 100px;
-     position: fixed;
+     position: fixed ;
      top: 0;
-     width: 100%;
+     width: 100vw;
      grid-area: nav;
+     z-index: 100;
     
 }
 .nav_name{
@@ -56,7 +59,7 @@ body{
 }
 
 .img_corpo{
-
+     margin: 0%;
 
 }
 
@@ -65,7 +68,7 @@ body{
      background-color: rgba(0, 217, 255, 0);
      color: rgb(255, 255, 255);
      text-align: center;
-     margin: 250px 500px 300px 500px;
+     margin: 0px 500px 300px 500px;
      padding: 100px; border-radius: 20px;
      grid-area: corpo;
      justify-content: center;

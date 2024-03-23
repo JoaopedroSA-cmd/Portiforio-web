@@ -29,5 +29,3 @@ observer.observe(infoText);
 
 
 
-
-
